@@ -1,0 +1,167 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Link Styles */
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Header Styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    /* height: auto; */
+}
+/* Navigation Menu Styling */
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav ul li a {
+    color: #fff;
+    padding: 5px 10px;
+}
+
+/* Hamburger Menu for Mobile */
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+}
+
+/* Hero Section Styling */
+.hero {
+    background-image: url('../images/hero-bg-img.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 20px;
+}
+
+/* Services Section Styling */
+.services {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 20px;
+}
+
+.service {
+    text-align: center;
+    flex: 1;
+    padding: 10px;
+}
+
+.icon {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.service h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.service p {
+    font-size: 16px;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    /* Navigation Menu for Tablet and Mobile */
+    .nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #333;
+        padding: 10px;
+    }
+
+    .nav ul.open {
+        display: flex;
+    }
+
+    .hamburger-menu {
+        display: block;
+        font-size: 24px;
+    }
+
+    /* Services Section Stack */
+    .services {
+        flex-direction: column;
+    }
+
+    /* Hero Section Adjustments */
+    .hero-text h1 {
+        font-size: 36px;
+    }
+
+    .hero-text p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Mobile Adjustments for Header */
+    .header {
+        flex-direction: column;
+    }
+
+    /* Hero Section Adjustments for Small Screens */
+    .hero-text h1 {
+        font-size: 28px;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+    }
+
+    /* Footer Stacks on Small Screens */
+    .footer {
+        flex-direction: column;
+    }
+}
